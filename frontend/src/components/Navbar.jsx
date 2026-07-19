@@ -83,7 +83,7 @@ function Navbar() {
             duration-300
             "
           >
-            Get Started
+            Click For Demo
           </button>
         </div>
 
@@ -123,7 +123,7 @@ function Navbar() {
                 }}
                 className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full w-full font-semibold"
               >
-                Get Started
+                Click For Demo
               </button>
             </div>
           </div>
