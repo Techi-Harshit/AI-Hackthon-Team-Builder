@@ -2,6 +2,8 @@
 
 An AI Powered Hackathon Team Builder platform built using the MERN Stack that helps students discover hackathons, build teams, receive AI driven recommendations, generate project ideas, and manage hackathon applications efficiently.
 
+#Live Demo : https://ai-hackthon-team-builder.vercel.app/
+
 ## Features
 
 - AI Based Teammate Recommendations
