@@ -60,7 +60,7 @@ function Sidebar({ activePage = "Dashboard" }) {
             repeat: Infinity,
           }}
         >
-          <h1 className="heading-font text-4xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+          <h1 className="heading-font text-4xl font-extrabold bg-linear-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
             COSMOQ
           </h1>
 
@@ -144,17 +144,19 @@ function Sidebar({ activePage = "Dashboard" }) {
                 transition-colors duration-200
                 ${
                   item.text === activePage || (item.text === "Organizer Panel" && activePage === "OrganizerDashboard") || (item.text === "Admin Panel" && activePage === "AdminDashboard")
-                    ? "bg-gradient-to-r from-[#FF8A00]/25 to-[#3B82F6]/25 border border-[#FF8A00]/25"
-                    : "hover:bg-[#0e1222]"
+                    ? "bg-linear-to-r from-[#FF8A00]/25 to-[#3B82F6]/25 border border-[#FF8A00]/25"
+                    : item.text === "AI Recommendations"
+                      ? "bg-[#1a1032] border border-fuchsia-500/20 shadow-[0_0_26px_rgba(192,132,252,0.18)]"
+                      : "hover:bg-[#0e1222]"
                 }
               `}
             >
               <div className="flex items-center gap-4">
-                <span className="text-xl text-[#3B82F6]">
+                <span className={`text-xl ${item.text === "AI Recommendations" ? "text-fuchsia-400" : "text-[#3B82F6]"}`}>
                   {item.icon}
                 </span>
 
-                <span className="font-medium">
+                <span className={`font-medium ${item.text === "AI Recommendations" ? "text-fuchsia-200" : ""}`}>
                   {item.text}
                 </span>
               </div>
@@ -170,7 +172,7 @@ function Sidebar({ activePage = "Dashboard" }) {
 
         <motion.div
           whileHover={{ scale: 1.02 }}
-          className="mt-8 rounded-3xl p-5 bg-gradient-to-br from-[#0e1222]/85 via-[#0e1222]/60 to-[#0e1222]/85 border border-white/5 relative overflow-hidden"
+          className="mt-8 rounded-3xl p-5 bg-linear-to-br from-[#0e1222]/85 via-[#0e1222]/60 to-[#0e1222]/85 border border-white/5 relative overflow-hidden"
         >
           <div className="flex items-center gap-2 mb-3">
             <span className="text-amber-400 text-sm">👑</span>
@@ -200,7 +202,7 @@ function Sidebar({ activePage = "Dashboard" }) {
               boxShadow: "0px 0px 20px rgba(168,85,247,0.45)",
             }}
             whileTap={{ scale: 0.97 }}
-            className="w-full py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold text-xs hover:from-purple-500 hover:to-blue-500 transition-all flex items-center justify-center gap-2"
+            className="w-full py-2.5 rounded-xl bg-linear-to-r from-purple-600 to-blue-600 text-white font-bold text-xs hover:from-purple-500 hover:to-blue-500 transition-all flex items-center justify-center gap-2"
           >
             Upgrade Now <span className="text-[10px]">→</span>
           </motion.button>

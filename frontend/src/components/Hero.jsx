@@ -3,13 +3,18 @@ import { useNavigate } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useAuth } from "../context/AuthContext";
 import {
-  FaBrain,
   FaSearch,
-  FaGlobe,
   FaBell,
   FaCode,
-  FaChartBar,
 } from "react-icons/fa";
+
+const initialParticles = Array.from({ length: 10 }, () => ({
+  size: Math.random() * 2 + 1,
+  left: Math.random() * 100,
+  top: Math.random() * 100,
+  duration: Math.random() * 10 + 6,
+  delay: Math.random() * 5,
+}));
 
 function Hero() {
   const navigate = useNavigate();
@@ -33,6 +38,8 @@ function Hero() {
   const rotateX = useTransform(scrollYProgress, [0, 0.45], [14, 0]);
   const opacity = useTransform(scrollYProgress, [0, 0.35], [0.65, 1]);
 
+  const [particles] = useState(initialParticles);
+
   useEffect(() => {
     let current = 0;
     const timer = setInterval(() => {
@@ -46,9 +53,6 @@ function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-  // Generate 10 floating particles
-  const particles = Array.from({ length: 10 });
-
   // Word-by-word staggered animation setup
   const titleText = "Find Your Perfect Hackathon Team Powered by AI";
   const words = titleText.split(" ");
@@ -56,49 +60,42 @@ function Hero() {
   return (
     <section id="overview" className="relative min-h-[175vh] lg:min-h-[155vh] bg-[#050816] text-white overflow-hidden flex flex-col items-center pt-20 pb-32">
       {/* Brand Watermark */}
-      <div className="absolute top-[8%] left-1/2 -translate-x-1/2 text-[14vw] font-black tracking-widest pointer-events-none select-none bg-gradient-to-b from-white/12 via-white/5 to-transparent bg-clip-text text-transparent uppercase font-sans">
+      <div className="absolute top-[8%] left-1/2 -translate-x-1/2 text-[14vw] font-black tracking-widest pointer-events-none select-none bg-linear-to-b from-white/12 via-white/5 to-transparent bg-clip-text text-transparent uppercase font-sans">
         COSMOQ
       </div>
 
       {/* Volumetric Glowing Beams (Left: Orange, Right: Blue) */}
       {/* Orange Glow on Left */}
-      <div className="absolute left-[2%] top-[5%] w-[38%] h-[80%] bg-gradient-to-b from-transparent via-[#FF8A00]/15 to-transparent blur-[140px] rounded-full pointer-events-none mix-blend-screen" />
+      <div className="absolute left-[2%] top-[5%] w-[38%] h-[80%] bg-linear-to-b from-transparent via-[#FF8A00]/15 to-transparent blur-[140px] rounded-full pointer-events-none mix-blend-screen" />
       {/* Blue Glow on Right */}
-      <div className="absolute right-[2%] top-[10%] w-[38%] h-[80%] bg-gradient-to-b from-transparent via-[#3B82F6]/20 to-transparent blur-[140px] rounded-full pointer-events-none mix-blend-screen" />
+      <div className="absolute right-[2%] top-[10%] w-[38%] h-[80%] bg-linear-to-b from-transparent via-[#3B82F6]/20 to-transparent blur-[140px] rounded-full pointer-events-none mix-blend-screen" />
 
       {/* Star Overlay */}
-      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(circle_at_center,#ffffff_0.8px,transparent_0.8px)] bg-[size:40px_40px] pointer-events-none" />
+      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(circle_at_center,#ffffff_0.8px,transparent_0.8px)] bg-size-[40px_40px] pointer-events-none" />
 
       {/* Floating Cosmic Space Particles */}
-      {particles.map((_, i) => {
-        const size = Math.random() * 2 + 1;
-        const left = Math.random() * 100;
-        const top = Math.random() * 100;
-        const duration = Math.random() * 10 + 6;
-        const delay = Math.random() * 5;
-        return (
-          <motion.div
-            key={i}
-            className="absolute bg-white rounded-full opacity-0 pointer-events-none z-0"
-            style={{
-              width: size,
-              height: size,
-              left: `${left}%`,
-              top: `${top}%`,
-            }}
-            animate={{
-              y: [0, -120],
-              opacity: [0, 0.5, 0],
-            }}
-            transition={{
-              duration,
-              delay,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          />
-        );
-      })}
+      {particles.map(({ size, left, top, duration, delay }, i) => (
+        <motion.div
+          key={i}
+          className="absolute bg-white rounded-full opacity-0 pointer-events-none z-0"
+          style={{
+            width: size,
+            height: size,
+            left: `${left}%`,
+            top: `${top}%`,
+          }}
+          animate={{
+            y: [0, -120],
+            opacity: [0, 0.5, 0],
+          }}
+          transition={{
+            duration,
+            delay,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+        />
+      ))}
 
       {/* Content wrapper */}
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center w-full relative z-10 pt-16">
@@ -133,7 +130,7 @@ function Hero() {
                     }}
                   >
                     {isGradient ? (
-                      <span className="bg-gradient-to-r from-[#FF8A00] to-[#ffaa00] bg-clip-text text-transparent">
+                      <span className="bg-linear-to-r from-[#FF8A00] to-[#ffaa00] bg-clip-text text-transparent">
                         {word}
                       </span>
                     ) : (
@@ -235,7 +232,7 @@ function Hero() {
         <div ref={containerRef} className="w-full flex justify-center relative pt-10">
           
           {/* Earth Horizon Glow behind Mockup */}
-          <div className="absolute top-[60%] left-1/2 -translate-x-1/2 w-[130%] h-[200px] rounded-[100%] bg-[#050816] border-t border-t-cyan-500/20 shadow-[0_-15px_30px_rgba(6,182,212,0.12)] pointer-events-none z-0" />
+          <div className="absolute top-[60%] left-1/2 -translate-x-1/2 w-[130%] h-50 rounded-[100%] bg-[#050816] border-t border-t-cyan-500/20 shadow-[0_-15px_30px_rgba(6,182,212,0.12)] pointer-events-none z-0" />
 
           <motion.div
             style={{
@@ -264,7 +261,7 @@ function Hero() {
             {/* Hover scan trail border effect */}
             <div className="absolute inset-0 rounded-2xl border border-[#3b82f6]/20 pointer-events-none overflow-hidden z-20">
               <motion.div 
-                className="absolute w-[200px] h-[200px] bg-gradient-to-r from-transparent via-[#3b82f6]/40 to-transparent blur-md opacity-60"
+                className="absolute w-50 h-50 bg-linear-to-r from-transparent via-[#3b82f6]/40 to-transparent blur-md opacity-60"
                 animate={{
                   x: [-300, 900],
                   y: [-150, 500],
@@ -278,7 +275,7 @@ function Hero() {
             </div>
 
             {/* Dashboard Inside Screen Layout */}
-            <div className="rounded-[14px] bg-[#050816]/95 border border-white/5/60 overflow-hidden grid grid-cols-[180px_1fr] h-[480px] relative z-10 text-left">
+            <div className="rounded-[14px] bg-[#050816]/95 border border-white/5/60 overflow-hidden grid grid-cols-[180px_1fr] h-120 relative z-10 text-left">
               
               {/* Sidebar Mock */}
               <div className="bg-[#050816]/40 border-r border-white/5/60 p-4 flex flex-col justify-between">
