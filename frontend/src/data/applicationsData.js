@@ -1,0 +1,76 @@
+// My Applications Page Data
+
+export const applicationStats = [
+  { value: "12", label: "Applications Sent", icon: "📨", color: "from-purple-500/20 to-purple-600/20", border: "border-purple-500/30", iconBg: "text-purple-400" },
+  { value: "5", label: "Under Review", icon: "⏳", color: "from-amber-500/20 to-amber-600/20", border: "border-amber-500/30", iconBg: "text-amber-400" },
+  { value: "6", label: "Accepted", icon: "✅", color: "from-emerald-500/20 to-emerald-600/20", border: "border-emerald-500/30", iconBg: "text-emerald-400" },
+  { value: "1", label: "Rejected", icon: "❌", color: "from-red-500/20 to-red-600/20", border: "border-red-500/30", iconBg: "text-red-400" },
+];
+
+export const applicationTabs = [
+  { id: "team", label: "Team Applications" },
+  { id: "hackathon", label: "Hackathon Registrations" },
+];
+
+export const applications = [
+  {
+    id: 1,
+    teamName: "Code Warriors",
+    description: "Building AI solutions for real world problems",
+    avatar: "🛡️",
+    avatarBg: "from-purple-600 to-blue-600",
+    skills: ["React", "Node.js", "MongoDB", "AI/ML"],
+    appliedDate: "May 24, 2024",
+    appliedTime: "10:30 AM",
+    compatibility: 92,
+    compatibilityColor: "#22c55e",
+    status: "Accepted",
+    statusColor: "emerald",
+    statusText: "You're in!",
+  },
+  {
+    id: 2,
+    teamName: "AI Innovators",
+    description: "AI + ML + Data Science Enthusiasts",
+    avatar: "🧠",
+    avatarBg: "from-cyan-600 to-teal-600",
+    skills: ["Python", "TensorFlow", "React", "SQL"],
+    appliedDate: "May 22, 2024",
+    appliedTime: "04:15 PM",
+    compatibility: 89,
+    compatibilityColor: "#22c55e",
+    status: "Under Review",
+    statusColor: "amber",
+    statusText: "Team reviewing your application",
+  },
+  {
+    id: 3,
+    teamName: "Tech Titans",
+    description: "Full stack wizards wanted",
+    avatar: "⚡",
+    avatarBg: "from-yellow-500 to-orange-600",
+    skills: ["Next.js", "Node.js", "PostgreSQL", "AWS"],
+    appliedDate: "May 20, 2024",
+    appliedTime: "09:45 AM",
+    compatibility: 87,
+    compatibilityColor: "#22c55e",
+    status: "Under Review",
+    statusColor: "amber",
+    statusText: "Team reviewing your application",
+  },
+  {
+    id: 4,
+    teamName: "Debug Demons",
+    description: "Solve problems, build solutions",
+    avatar: "👹",
+    avatarBg: "from-red-600 to-pink-600",
+    skills: ["Java", "Spring Boot", "MySQL", "Docker"],
+    appliedDate: "May 18, 2024",
+    appliedTime: "02:20 PM",
+    compatibility: 75,
+    compatibilityColor: "#f59e0b",
+    status: "Rejected",
+    statusColor: "red",
+    statusText: "Better luck next time!",
+  },
+];

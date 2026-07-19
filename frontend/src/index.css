@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+/* ===========================
+   GLOBAL DESIGN SYSTEM
+   Landing page: bg-[#050816]
+   Accent Orange: #FF8A00
+   Accent Blue: #3B82F6
+=========================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050816;
+  color: #e2e8f0;
+  font-family: "Sora", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- HEADINGS ---- */
+h1, h2, h3, h4, h5, h6 {
+  color: #f0f4ff;
+  letter-spacing: -0.01em;
+}
+
+/* Premium silver gradient headings - use class .heading-gradient */
+.heading-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Page title style */
+.page-title {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 40%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+/* Section subtitle */
+.section-subtitle {
+  color: #64748b;
+}
+
+/* ---- GLOBAL PAGE WRAPPER ---- */
+.page-bg {
+  position: relative;
+  min-height: 100vh;
+  background-color: #050816;
+  color: #e2e8f0;
+  overflow: hidden;
+}
+
+/* ---- COSMIC GLOWS - applied globally ---- */
+.cosmic-glow::before {
+  content: '';
+  position: absolute;
+  left: -15%;
+  top: 10%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(255,138,0,0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cosmic-glow::after {
+  content: '';
+  position: absolute;
+  right: -10%;
+  top: 35%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(59,130,246,0.09) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---- CARDS ---- */
+.card-glass {
+  background: rgba(14, 18, 34, 0.65);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 1.5rem;
+}
+
+.card-glass:hover {
+  border-color: rgba(59,130,246,0.15);
+  transition: border-color 0.3s ease;
+}
+
+/* ---- SCROLLBARS ---- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59,130,246,0.3);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59,130,246,0.6);
+}
+
+/* Sidebar scrollbar */
+.sidebar-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.sidebar-scroll::-webkit-scrollbar { width: 4px; }
+.sidebar-scroll::-webkit-scrollbar-track { background: transparent; }
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148,163,184,0.12);
+  border-radius: 999px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(59,130,246,0.4);
+}
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ---- INPUT & SELECT GLOBALS ---- */
+input, select, textarea {
+  background: rgba(5,8,22,0.7);
+  border: 1px solid rgba(255,255,255,0.07);
+  color: #e2e8f0;
+  transition: border-color 0.2s ease;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: rgba(59,130,246,0.45);
+  outline: none;
+}
+input::placeholder, textarea::placeholder {
+  color: #475569;
+}
+
+/* ---- ANIMATIONS ---- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease both;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255,138,0,0.2); }
+  50% { box-shadow: 0 0 35px rgba(255,138,0,0.45); }
+}
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+/* ---- FONT UTILITY ---- */
+.heading-font {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+}

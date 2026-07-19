@@ -1,0 +1,501 @@
+[
+  {
+    "_id": "1782296427812",
+    "name": "Harshit Keshari",
+    "email": "kesharih040@gmail.com",
+    "password": "$2b$10$YiXxL0Jg0rkJi.mNoQoEo.4FaEMojCNi8urqLconaY9//23M6D0SK",
+    "college": "",
+    "branch": "",
+    "year": null,
+    "skills": [],
+    "preferredRole": "Full Stack",
+    "interests": [],
+    "availability": "Anytime",
+    "location": "",
+    "github": "",
+    "linkedin": "",
+    "bio": "",
+    "experience": "Beginner",
+    "trustScore": 50,
+    "totalHackathons": 0,
+    "completedHackathons": 0,
+    "averageRating": 0,
+    "role": "participant",
+    "createdAt": "2026-06-24T10:20:27.812Z",
+    "updatedAt": "2026-06-24T10:20:27.812Z",
+    "lookingForTeam": true,
+    "lastActive": "2026-07-17T07:03:10.591Z",
+    "profileCompletion": 21
+  },
+  {
+    "_id": "1782920478157",
+    "name": "Vaibhav Raghuvanshi",
+    "email": "vaibhavraghu123@gmail.com",
+    "password": "$2b$10$OyhHhSuUU5C9IokRuBm8I.ezgjqEwjMFtmjU8C7K5RdvGQFqR6fe2",
+    "college": "",
+    "branch": "",
+    "year": null,
+    "skills": [],
+    "preferredRole": "AI/ML",
+    "interests": [],
+    "availability": "Anytime",
+    "location": "",
+    "github": "",
+    "linkedin": "",
+    "bio": "",
+    "experience": "Beginner",
+    "trustScore": 50,
+    "totalHackathons": 0,
+    "completedHackathons": 0,
+    "averageRating": 0,
+    "role": "participant",
+    "createdAt": "2026-07-01T15:41:18.158Z",
+    "updatedAt": "2026-07-01T15:41:18.158Z",
+    "lookingForTeam": true,
+    "lastActive": "2026-07-04T15:11:24.059Z",
+    "profileCompletion": 21
+  },
+  {
+    "_id": "1782922254084",
+    "name": "Irfan Ahmed ",
+    "email": "irfan1234@gmail.com",
+    "password": "$2b$10$KjaJI6UyodnJZrEB.ui6Wupq9i3mCW8GzPzhEYoJZeLDH9hjur4tq",
+    "college": "",
+    "branch": "",
+    "year": null,
+    "skills": [],
+    "preferredRole": "Frontend",
+    "interests": [],
+    "availability": "Anytime",
+    "location": "",
+    "github": "",
+    "linkedin": "",
+    "bio": "",
+    "experience": "Beginner",
+    "trustScore": 50,
+    "totalHackathons": 0,
+    "completedHackathons": 0,
+    "averageRating": 0,
+    "role": "participant",
+    "createdAt": "2026-07-01T16:10:54.084Z",
+    "updatedAt": "2026-07-01T16:10:54.084Z",
+    "lookingForTeam": true,
+    "lastActive": "2026-07-16T13:11:54.575Z",
+    "profileCompletion": 21
+  },
+  {
+    "_id": "1784171696335fawg1",
+    "name": "Rohan Gupta",
+    "email": "rohan.gupta@gmail.com",
+    "preferredRole": "Backend",
+    "skills": [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Redis",
+      "Docker"
+    ],
+    "interests": [
+      "Finance",
+      "Payment Systems",
+      "Performance Tuning"
+    ],
+    "experience": "Advanced",
+    "college": "Delhi Technological University",
+    "year": 4,
+    "branch": "Computer Science",
+    "bio": "Passionate backend engineer who builds high-throughput microservices. Docker lover.",
+    "availability": "Anytime",
+    "trustScore": 88,
+    "profileCompletion": 90,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "1784171696335gh7g4",
+    "name": "Ananya Sharma",
+    "email": "ananya.sharma@gmail.com",
+    "preferredRole": "Frontend",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js",
+      "Redux"
+    ],
+    "interests": [
+      "UI/UX",
+      "Web3",
+      "SaaS Analytics"
+    ],
+    "experience": "Intermediate",
+    "college": "IIT Bombay",
+    "year": 3,
+    "branch": "Electrical Engineering",
+    "bio": "Frontend dev focusing on sleek animations, clean components, and intuitive UX flows.",
+    "availability": "Weekdays",
+    "trustScore": 92,
+    "profileCompletion": 85,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "17841716963356977m",
+    "name": "Kabir Verma",
+    "email": "kabir.verma@gmail.com",
+    "preferredRole": "AI/ML",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "Pandas",
+      "NLP",
+      "OpenAI API"
+    ],
+    "interests": [
+      "AI Analytics",
+      "Healthcare",
+      "Large Language Models"
+    ],
+    "experience": "Advanced",
+    "college": "IIIT Hyderabad",
+    "year": 3,
+    "branch": "Artificial Intelligence",
+    "bio": "ML Research Intern. Building agentic workflows and fine-tuning transformer models.",
+    "availability": "Anytime",
+    "trustScore": 85,
+    "profileCompletion": 95,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "17841716963353evo2",
+    "name": "Simran Kaur",
+    "email": "simran.kaur@gmail.com",
+    "preferredRole": "UI/UX",
+    "skills": [
+      "Figma",
+      "Adobe XD",
+      "CSS",
+      "HTML",
+      "Framer Motion"
+    ],
+    "interests": [
+      "Sustainability",
+      "Mobile Apps",
+      "Interactive Design"
+    ],
+    "experience": "Intermediate",
+    "college": "NIFT Delhi",
+    "year": 4,
+    "branch": "Design",
+    "bio": "Designing interfaces that tell stories. 2x hackathon winner in design categories.",
+    "availability": "Weekend",
+    "trustScore": 90,
+    "profileCompletion": 80,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "1784171696335iomoj",
+    "name": "Aditya Sen",
+    "email": "aditya.sen@gmail.com",
+    "preferredRole": "Full Stack",
+    "skills": [
+      "Next.js",
+      "Go",
+      "MongoDB",
+      "Redis",
+      "TypeScript",
+      "Docker"
+    ],
+    "interests": [
+      "CyberSecurity",
+      "Cloud Tech",
+      "SaaS Platforms"
+    ],
+    "experience": "Advanced",
+    "college": "BITS Pilani",
+    "year": 4,
+    "branch": "Information Systems",
+    "bio": "Full stack wizard who builds scalable web apps from idea to deployment in 24 hours.",
+    "availability": "Anytime",
+    "trustScore": 95,
+    "profileCompletion": 100,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "1784171696335mszhw",
+    "name": "Riya Das",
+    "email": "riya.das@gmail.com",
+    "preferredRole": "Mobile",
+    "skills": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "iOS",
+      "Android",
+      "Swift"
+    ],
+    "interests": [
+      "HealthTech",
+      "Social Networking",
+      "E-commerce"
+    ],
+    "experience": "Intermediate",
+    "college": "VIT Vellore",
+    "year": 3,
+    "branch": "Computer Science",
+    "bio": "Building cross-platform mobile apps with native feels and fluid user transitions.",
+    "availability": "Weekdays",
+    "trustScore": 84,
+    "profileCompletion": 78,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "1784171696335hikre",
+    "name": "Devansh Joshi",
+    "email": "devansh.joshi@gmail.com",
+    "preferredRole": "DevOps",
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "CI/CD",
+      "Nginx",
+      "GitHub Actions"
+    ],
+    "interests": [
+      "Infrastructure",
+      "Cloud Security",
+      "Automation Systems"
+    ],
+    "experience": "Advanced",
+    "college": "NSUT Delhi",
+    "year": 4,
+    "branch": "Instrumentation Control",
+    "bio": "Keeping servers alive and automating testing-deployment pipelines. Infrastructure as code enthusiast.",
+    "availability": "Anytime",
+    "trustScore": 91,
+    "profileCompletion": 88,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "17841716963362u82k",
+    "name": "Meera Nair",
+    "email": "meera.nair@gmail.com",
+    "preferredRole": "AI/ML",
+    "skills": [
+      "Python",
+      "Scikit-Learn",
+      "Computer Vision",
+      "OpenCV",
+      "TensorFlow"
+    ],
+    "interests": [
+      "Climate Tech",
+      "Object Detection",
+      "Smart Agriculture"
+    ],
+    "experience": "Intermediate",
+    "college": "SRM University",
+    "year": 3,
+    "branch": "Software Engineering",
+    "bio": "Using computer vision models to solve sustainability and smart agriculture problems.",
+    "availability": "Weekend",
+    "trustScore": 87,
+    "profileCompletion": 83,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "1784171696336zevzu",
+    "name": "Yash Singhal",
+    "email": "yash.singhal@gmail.com",
+    "preferredRole": "Blockchain",
+    "skills": [
+      "Solidity",
+      "Rust",
+      "Ethereum",
+      "Web3.js",
+      "Hardhat",
+      "Go"
+    ],
+    "interests": [
+      "DeFi",
+      "Smart Contracts",
+      "DAOs"
+    ],
+    "experience": "Advanced",
+    "college": "IIT Delhi",
+    "year": 4,
+    "branch": "Mathematics & Computing",
+    "bio": "Auditing smart contracts and building decentralized finance products. Gas optimization nerd.",
+    "availability": "Anytime",
+    "trustScore": 89,
+    "profileCompletion": 92,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "1784171696336owarf",
+    "name": "Sneha Iyer",
+    "email": "sneha.iyer@gmail.com",
+    "preferredRole": "Backend",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Docker",
+      "REST APIs",
+      "AWS"
+    ],
+    "interests": [
+      "CyberSecurity",
+      "Authentication Protocols",
+      "Cloud Architecture"
+    ],
+    "experience": "Intermediate",
+    "college": "RVCE Bangalore",
+    "year": 3,
+    "branch": "Information Science",
+    "bio": "Strong Spring Boot developer focusing on JWT auth protocols and cloud database management.",
+    "availability": "Weekdays",
+    "trustScore": 86,
+    "profileCompletion": 84,
+    "lookingForTeam": true,
+    "password": "cleartext_seed_password",
+    "role": "user",
+    "registeredHackathons": [
+      "1784171696336ozono",
+      "17841716963362xxl2",
+      "17841716963366x9za"
+    ]
+  },
+  {
+    "_id": "demo-1784394776767",
+    "name": "Aarav Sharma",
+    "email": "demo@cosmoq.app",
+    "password": "$2b$10$z3d2DFnBDaVapYl.kRT/xeWYus65Z2r35dkHtVCVd0ndjS1Gslk.q",
+    "college": "Indian Institute of Technology Delhi",
+    "branch": "Computer Science and Engineering",
+    "year": 3,
+    "skills": [
+      "React",
+      "Node.js",
+      "Python",
+      "Machine Learning",
+      "UI/UX"
+    ],
+    "preferredRole": "Full Stack",
+    "interests": [
+      "Artificial Intelligence",
+      "Open Source",
+      "Product Development"
+    ],
+    "interestedDomains": [
+      "Web Development",
+      "AI/ML",
+      "Developer Tools"
+    ],
+    "availability": "Weekend",
+    "location": "New Delhi, India",
+    "github": "https://github.com/aarav-sharma-demo",
+    "linkedin": "https://www.linkedin.com/in/aarav-sharma-demo",
+    "resumeText": "Aarav Sharma - Full Stack Developer and AI enthusiast.",
+    "bio": "Full stack developer who enjoys building practical AI-powered products with collaborative teams.",
+    "experience": "Intermediate",
+    "experienceLevel": "Intermediate",
+    "avatar": "https://i.pravatar.cc/300?img=12",
+    "lookingForTeam": true,
+    "projects": [
+      {
+        "title": "Campus Connect",
+        "description": "A collaboration platform for student communities.",
+        "technologies": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
+      }
+    ],
+    "registeredHackathons": [],
+    "interestedHackathons": [],
+    "notifications": [],
+    "badges": [],
+    "totalHackathons": 0,
+    "completedHackathons": 0,
+    "hackathonsParticipated": 0,
+    "hackathonsWon": 0,
+    "projectsCompleted": 0,
+    "totalXP": 0,
+    "rating": 0,
+    "wins": 0,
+    "profileViews": 0,
+    "trustScore": 50,
+    "averageRating": 0,
+    "role": "participant",
+    "isVerified": true,
+    "profileCompletion": 100,
+    "createdAt": "2026-07-18T17:12:56.789Z",
+    "updatedAt": "2026-07-18T17:13:18.011Z",
+    "lastActive": "2026-07-18T17:13:18.011Z"
+  }
+]

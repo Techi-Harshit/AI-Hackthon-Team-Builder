@@ -1,0 +1,76 @@
+[
+  {
+    "_id": "1782920783004",
+    "teamName": "MIcro coders",
+    "description": "",
+    "hackathonId": "64b0f0237d04e38e8cb2f437",
+    "requiredSkills": [
+      "react",
+      "Node",
+      "ML",
+      "Docker"
+    ],
+    "maxMembers": 4,
+    "status": "Open",
+    "leader": "1782920478157",
+    "members": [
+      "1782920478157"
+    ],
+    "createdAt": "2026-07-01T15:46:23.004Z",
+    "updatedAt": "2026-07-01T15:46:23.004Z"
+  },
+  {
+    "_id": "1784171696336vyusj",
+    "teamName": "Web3 Builders India",
+    "description": "Building a decentralized gas-less micro-lending pool for rural micro-enterprises.",
+    "leader": "1784171696336zevzu",
+    "members": [
+      "1784171696335fawg1"
+    ],
+    "hackathonId": "1784171696336ozono",
+    "requiredSkills": [
+      "Solidity",
+      "Web3.js",
+      "React"
+    ],
+    "maxMembers": 4,
+    "recruitmentStatus": "Recruiting",
+    "status": "Open"
+  },
+  {
+    "_id": "1784171696336kj3is",
+    "teamName": "RoboMed Diagnostics",
+    "description": "Developing automated vision analysis of medical scans using computer vision models.",
+    "leader": "17841716963356977m",
+    "members": [
+      "1784171696335mszhw"
+    ],
+    "hackathonId": "17841716963366x9za",
+    "requiredSkills": [
+      "Python",
+      "TensorFlow",
+      "Figma"
+    ],
+    "maxMembers": 4,
+    "recruitmentStatus": "Recruiting",
+    "status": "Open"
+  },
+  {
+    "_id": "1784171696337rlfo9",
+    "teamName": "EcoTrackers",
+    "description": "Interactive dashboard calculating smart carbon offset indexes for daily commuters.",
+    "leader": "17841716963353evo2",
+    "members": [
+      "1784171696335gh7g4"
+    ],
+    "hackathonId": "17841716963368ny7t",
+    "requiredSkills": [
+      "React",
+      "CSS",
+      "Python"
+    ],
+    "maxMembers": 4,
+    "recruitmentStatus": "Recruiting",
+    "status": "Open"
+  }
+]
