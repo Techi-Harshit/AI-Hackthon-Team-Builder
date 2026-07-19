@@ -184,7 +184,7 @@ function Hero() {
               duration-300
               "
             >
-              Get Started
+              Click For Demo
             </button>
             <a
               href="#hackathons"
