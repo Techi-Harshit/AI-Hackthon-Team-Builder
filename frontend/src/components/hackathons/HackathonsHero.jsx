@@ -1,11 +1,7 @@
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { hackathonStats } from "../../data/hackathonsPageData";
-import { FaPlus } from "react-icons/fa";
 
 function HackathonsHero() {
-  const navigate = useNavigate();
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -36,7 +32,7 @@ function HackathonsHero() {
           </motion.p>
         </div>
 
-        {/* Right - Stats + Button */}
+        {/* Right - Stats */}
         <div className="flex items-center gap-4">
           {/* Stats */}
           <div className="hidden xl:flex items-center gap-3">
@@ -57,23 +53,6 @@ function HackathonsHero() {
               </motion.div>
             ))}
           </div>
-
-          {/* Host Button */}
-          <motion.button
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.5 }}
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 0 25px rgba(168,85,247,0.4)",
-            }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => navigate("/organizer/dashboard")}
-            className="flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold text-sm whitespace-nowrap cursor-pointer"
-          >
-            <FaPlus className="text-xs" />
-            Host a Hackathon
-          </motion.button>
         </div>
       </div>
     </motion.div>

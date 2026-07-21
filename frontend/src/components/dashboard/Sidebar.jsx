@@ -122,9 +122,6 @@ function Sidebar({ activePage = "Dashboard" }) {
         <div className="space-y-3">
           {[
             ...menuItems.slice(0, 1),
-            ...(user?.role === "organizer"
-              ? [{ icon: <FaChartBar />, text: "Organizer Panel", path: "/organizer/dashboard" }]
-              : []),
             ...menuItems.slice(1)
           ].map((item, index) => (
             <motion.div
@@ -143,7 +140,7 @@ function Sidebar({ activePage = "Dashboard" }) {
                 flex items-center justify-between p-4 rounded-2xl cursor-pointer
                 transition-colors duration-200
                 ${
-                  item.text === activePage || (item.text === "Organizer Panel" && activePage === "OrganizerDashboard") || (item.text === "Admin Panel" && activePage === "AdminDashboard")
+                  item.text === activePage || (item.text === "Admin Panel" && activePage === "AdminDashboard")
                     ? "bg-linear-to-r from-[#FF8A00]/25 to-[#3B82F6]/25 border border-[#FF8A00]/25"
                     : item.text === "AI Recommendations"
                       ? "bg-[#1a1032] border border-fuchsia-500/20 shadow-[0_0_26px_rgba(192,132,252,0.18)]"

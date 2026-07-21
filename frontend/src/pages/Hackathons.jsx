@@ -5,7 +5,6 @@ import HackathonsHero from "../components/hackathons/HackathonsHero";
 import HackathonsFilterTabs from "../components/hackathons/HackathonsFilterTabs";
 import FilterBar from "../components/hackathons/FilterBar";
 import HackathonsGrid from "../components/hackathons/HackathonsGrid";
-import HackathonsCTA from "../components/hackathons/HackathonsCTA";
 import CreateTeamModal from "../components/discover/CreateTeamModal";
 import api from "../api/axios";
 import { useAuth } from "../context/AuthContext";
@@ -334,8 +333,7 @@ function Hackathons() {
             </div>
           )}
 
-          {/* CTA Banner */}
-          <HackathonsCTA />
+
         </div>
 
       <AnimatePresence>

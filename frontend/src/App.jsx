@@ -11,7 +11,6 @@ import Settings from "./pages/Settings";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import HackathonDetails from "./pages/HackathonDetails";
-import OrganizerDashboard from "./pages/OrganizerDashboard";
 import ErrorBoundary from "./components/common/ErrorBoundary";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth } from "./context/AuthContext";
@@ -48,7 +47,6 @@ function App() {
           <Route path="/discover-teams" element={<ProtectedRoute><ErrorBoundary><DiscoverTeams /></ErrorBoundary></ProtectedRoute>} />
           <Route path="/hackathons" element={<ProtectedRoute><Hackathons /></ProtectedRoute>} />
           <Route path="/hackathons/:id" element={<ProtectedRoute><HackathonDetails /></ProtectedRoute>} />
-          <Route path="/organizer/dashboard" element={<ProtectedRoute><OrganizerDashboard /></ProtectedRoute>} />
           <Route path="/applications" element={<ProtectedRoute><MyJourney /></ProtectedRoute>} />
           <Route path="/my-journey" element={<ProtectedRoute><MyJourney /></ProtectedRoute>} />
           <Route path="/my-team" element={<ProtectedRoute><MyTeam /></ProtectedRoute>} />
