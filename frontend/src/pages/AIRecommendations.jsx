@@ -1075,7 +1075,7 @@ TEAM ROLES & ASSIGNMENTS:
 
             {/* Hackathon Select Dropdown */}
             <div className="shrink-0 flex flex-col gap-2 min-w-[250px] md:self-center">
-              <label className="text-[10px] uppercase font-black tracking-wider text-slate-400">Select Hackathon Context</label>
+              <label className="text-base uppercase font-black tracking-wider text-cyan-300 drop-shadow-lg">Select Your Interested Hackathon</label>
               <div className="flex gap-2">
                 <select
                   value={hackathonId || ""}
